@@ -1,21 +1,23 @@
-#grid{
-  display: grid;
-  grid-template-columns: 150px 1fr;
-}
+
 
 body{
   margin: 0;
 }
 a{
+  color: black;
   text-decoration: 0;
 }
 
 h1{
   font-size:50px;
+  color: green;
   text-align: center;
   margin: 0;
   padding: 20px;
   border-bottom:1px solid gray
+}
+h1 a{
+  color: green;
 }
 ol{
   margin: 0;
@@ -23,6 +25,28 @@ ol{
   padding: 20px;
   border-right:1px solid gray;
 }
+ol a{
+  color: lime;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left: 20px;
+}
+#images{
+  margin-left: 200px;
+  margin-top: 40px;
+}
+#images img{
+  height: 200px;
+}
+
 @media(max-width:800px){
   #grid{
     display:block;
@@ -32,5 +56,11 @@ ol{
   }
   h1{
     border-bottom:none;
+  }
+  #image{
+    margin-left: 0px;
+  }
+  img{
+    height: 100px;
   }
 }
